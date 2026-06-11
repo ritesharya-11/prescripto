@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import "tailwindcss";
+
+* {
+  font-family: Outfit;
+}
+
+ @theme {
+  --color-regal-blue: #243c5a; 
+  --color-primary: #5f6FFF;
+}
+
+::-webkit-scrollbar {
+  @apply hidden
+}
+
+* {
+  font-family: Outfit;
+}
