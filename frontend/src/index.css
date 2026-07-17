@@ -7,7 +7,10 @@
 
  @theme {
   --color-regal-blue: #243c5a; 
-  --color-primary: #5f6FFF;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-light: #eff6ff;
+  --color-accent-green: #10b981;
 }
 
 .active hr {

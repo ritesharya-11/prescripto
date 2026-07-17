@@ -3,38 +3,41 @@ import { assets } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <div className="md:mx-10">
-      <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm">
+    <div className="md:mx-10 mt-36">
+      <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-12 py-12 text-sm border-t border-gray-100">
         {/* --------- Left Section -------------- */}
-        <div>
-            <img className="mb-5 w-40" src={assets.logo} alt="" />
-            <p className="w-full md:w-2/3 text-gray-600 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div className="flex flex-col gap-4">
+            <img className="w-36 hover:opacity-90 transition-opacity" src={assets.logo} alt="Wellora" />
+            <p className="w-full md:w-3/4 text-gray-500 leading-relaxed">Simply browse through our extensive list of trusted doctors, schedule your appointments hassle-free, and manage your health seamlessly with Wellora.</p>
         </div>
 
         {/* --------- Center Section -------------- */}
         <div>
-            <p className="text-xl font-medium mb-5">COMPANY</p>
-            <ul className="flex flex-col gap-2 text-gray-600">
-                <li>Home</li>
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Privacy policy</li>
+            <p className="text-xs font-bold text-gray-800 tracking-widest uppercase mb-5">COMPANY</p>
+            <ul className="flex flex-col gap-2.5 text-gray-500 font-medium">
+                <li className="hover:text-primary transition-colors cursor-pointer">Home</li>
+                <li className="hover:text-primary transition-colors cursor-pointer">About us</li>
+                <li className="hover:text-primary transition-colors cursor-pointer">Contact us</li>
+                <li className="hover:text-primary transition-colors cursor-pointer">Privacy policy</li>
             </ul>
         </div>
 
         {/* --------- Right Section -------------- */}
         <div>
-            <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
-            <ul className="flex flex-col gap-2 text-gray-600">
-                <li>+1-212-456-7890</li>
-                <li>prescripto@gmail.com</li>
+            <p className="text-xs font-bold text-gray-800 tracking-widest uppercase mb-5">GET IN TOUCH</p>
+            <ul className="flex flex-col gap-2.5 text-gray-500 font-medium">
+                <li className="hover:text-primary transition-colors cursor-pointer">+1-212-456-7890</li>
+                <li className="hover:text-primary transition-colors cursor-pointer">contact@wellora.com</li>
             </ul>
         </div>
       </div>
       {/* --------- Copyright Text------------- */}
-      <div>
-        <hr className="border-t border-gray-200" />
-        <p className="py-5 text-sm text-center">Copyright © 2024 Prescripto - All Right Reserved.</p>
+      <div className="border-t border-gray-100 py-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-2">
+        <p>Copyright © 2026 Wellora - All Rights Reserved.</p>
+        <div className="flex gap-4">
+          <span className="hover:text-primary cursor-pointer transition-colors">Terms of Service</span>
+          <span className="hover:text-primary cursor-pointer transition-colors">Privacy Policy</span>
+        </div>
       </div>
     </div>
   );
